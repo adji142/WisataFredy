@@ -124,7 +124,7 @@ public class Sejarah extends Activity {
 			throw new Error("Unable to create database");
 		}
         
-        keyword_n="Seharah";
+        keyword_n="Sejarah";
         /** then, the database will be open to use */
 		try{
 			dbhelper.openDataBase();
