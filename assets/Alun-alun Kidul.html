@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+<script type="text/javascript">
+      function initialize() {
+        var myOptions = {
+          center: new google.maps.LatLng(-7.546137,110.611322),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+        var image = 'university.png';
+
+        var myLatLng = new google.maps.LatLng(-7.546137,110.611322);
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            icon: image
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+            content: "Alun Alun Kidul <br><a href='https://goo.gl/maps/8kqjJkySwVx'>See on google maps</a>"
+            
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+        	  infowindow.open(map,marker);
+        	});
+      }
+    </script>
+
+</head>
+<body onload="initialize()">
+	<p id="demo"></p>
+
+	<div  id="map_canvas" style="width:400px; height:600px"></div>
+</body>
+</html>

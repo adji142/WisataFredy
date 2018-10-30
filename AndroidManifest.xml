@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uas.app"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <user-library android:name="com.google.android.maps" />
+
+    <application
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.uas.app.SplashScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.uas.app.RecipesList"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.uas.app.RecipeDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.uas.app.AboutApp"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.uas.app.ShowMaps"
+            android:label="@string/title_activity_show_maps" >
+        </activity>
+        <activity
+            android:name="com.uas.app.Wisata"
+            android:label="@string/title_activity_wisata" >
+        </activity>
+        <activity
+            android:name="com.uas.app.Now"
+            android:label="@string/title_activity_now" >
+        </activity>
+        <activity
+            android:name="com.uas.app.Air"
+            android:label="@string/title_activity_air" >
+        </activity>
+        <activity
+            android:name="com.uas.app.Sejarah"
+            android:label="@string/title_activity_sejarah" >
+        </activity>
+        <activity
+            android:name="com.uas.app.Alam"
+            android:label="@string/title_activity_alam" >
+        </activity>
+        <activity
+            android:name="com.uas.app.Wisata2"
+            android:label="@string/title_activity_wisata2" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>
