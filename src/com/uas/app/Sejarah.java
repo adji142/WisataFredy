@@ -144,8 +144,8 @@ public class Sejarah extends Activity {
 				 * when one of item in the list is clicked, this app will access 
 				 * RecipeDetail.class. it also send id value to that class
 				 */
-				Intent i = new Intent(Sejarah.this, RecipesList.class);
-				//i.putExtra("id_for_detail", ID[position]);
+				Intent i = new Intent(Sejarah.this, RecipeDetail.class);
+				i.putExtra("id_for_detail", ID[position]);
 				startActivity(i);
 			}
 		});
